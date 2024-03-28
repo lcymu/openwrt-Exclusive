@@ -25,7 +25,7 @@ function drop_package(){
 rm -rf package/custom; mkdir package/custom
 
 # Add a feed source
-git clone https://github.com/fw876/helloworld.git package/ssr
+# git clone https://github.com/fw876/helloworld.git package/ssr
 git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
 git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon-18.06
@@ -44,6 +44,6 @@ find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wechatpush
+git clone https://github.com/firkerword/luci-app-serverchan.git package/luci-app-serverchan
 # git clone https://github.com/firkerword/luci-app-lucky.git package/lucky
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
